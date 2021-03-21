@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Berkshire+Swash&family=El+Messiri&family=Itim&family=Kaushan+Script&family=Akaya+Telivigala&family=Ravi+Prakash&family=Lobster+Two&family=Boogaloo&display=swap");
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contents {
+    overflow: hidden;
+    margin-top: -25px;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#left-contents {
+   position: fixed;
+    /* left: -230px; */
+    width: 100%;
+    height: 100%;
+    background: #252424;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+} 
+
+.contents .left-contents .menu {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    height: 150px;
+    font-size: 25px;
+    background: #252424;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.contents .left-contents .menu img {
+    border-radius: 50%;
+}
+
+.contents .left-contents ul a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: rgb(219, 219, 219);
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.contents .left-contents ul a i {
+    margin-right: 16px;
+}
+
+.contents .left-contents ul li:hover a {
+    padding-left: 10px;
+}
+
+.contents .left-contents footer {
+    position: absolute;
+    bottom: 2px;
+}
+
+.contents .left-contents footer .foo {
+    color: #4e4e4e;
+    font-size: 16px;
+    margin-left:25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contents #check {
+    display: none;
+}
+
+.contents label #btn, .contents label #close {
+    position: absolute;
+    cursor: pointer;
+    background: #252424;
+    border-radius: 3px;
+}
+
+.contents label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.contents label #close {
+    z-index: 1111; 
+    left: -195px;  
+    top: 25px; 
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.contents #check:checked ~ .left-contents {
+    left: 0;
+}
+
+.contents #check:checked ~ label #btn {
+    left: 230px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.contents #check:checked ~ label #close {
+    left: 187px;
+}
+
+.contents #check:checked ~ .contents {
+    margin-left: 230px;
+}
+
+.contents {
+    height: 100vh;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+} 
+
